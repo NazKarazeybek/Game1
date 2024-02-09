@@ -21,7 +21,7 @@ namespace Game1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            gamestartsin.Visible = false;
+            gamestarts.Visible = false;
             loadingscreen.Visible = false;
             countdown1.Visible = false;
             countdown2_.Visible = false;
@@ -39,7 +39,14 @@ namespace Game1
             SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.coundowncard);
             Start.Visible = false;
             loadingscreen.Visible = true;
-            gamestartsin.Visible = true;
+            dot1.Parent = loadingscreen;
+            dot2.Parent = loadingscreen;
+            dot3.Parent = loadingscreen;
+            countdown2_.Parent = loadingscreen;    
+            countdown3.Parent = loadingscreen;
+            countdown1.Parent = loadingscreen;
+            gamestarts.Parent = loadingscreen;
+            gamestarts.Visible = true;
             dot1.Visible = true;
             
             Refresh();
@@ -113,11 +120,12 @@ namespace Game1
             dot1.Visible = false;
             dot2.Visible = false;
             dot3.Visible = false;
-            gamestartsin.Visible = false;
+            gamestarts.Visible = false;
             countdown1.Visible = false;
             countdown2_.Visible = false;
             countdown3.Visible = false;
             beginscreen.Visible = true;
+            Begin.Parent = beginscreen;
             Begin.Visible = true;
 
             Refresh();

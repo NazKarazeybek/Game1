@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Start = new System.Windows.Forms.Button();
-            this.gamestartsin = new System.Windows.Forms.Label();
+            this.gamestarts = new System.Windows.Forms.Label();
             this.countdown3 = new System.Windows.Forms.Label();
             this.countdown2_ = new System.Windows.Forms.Label();
             this.countdown1 = new System.Windows.Forms.Label();
@@ -57,17 +57,17 @@
             this.Start.UseVisualStyleBackColor = false;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
-            // gamestartsin
+            // gamestarts
             // 
-            this.gamestartsin.BackColor = System.Drawing.Color.Transparent;
-            this.gamestartsin.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gamestartsin.Location = new System.Drawing.Point(259, 458);
-            this.gamestartsin.Name = "gamestartsin";
-            this.gamestartsin.Size = new System.Drawing.Size(258, 67);
-            this.gamestartsin.TabIndex = 2;
-            this.gamestartsin.Text = "Game Starts In";
-            this.gamestartsin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.gamestartsin.Click += new System.EventHandler(this.gamestarts_Click);
+            this.gamestarts.BackColor = System.Drawing.Color.Transparent;
+            this.gamestarts.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gamestarts.Location = new System.Drawing.Point(259, 458);
+            this.gamestarts.Name = "gamestarts";
+            this.gamestarts.Size = new System.Drawing.Size(258, 67);
+            this.gamestarts.TabIndex = 2;
+            this.gamestarts.Text = "Game Starts In";
+            this.gamestarts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gamestarts.Click += new System.EventHandler(this.gamestarts_Click);
             // 
             // countdown3
             // 
@@ -165,7 +165,7 @@
             // 
             this.beginscreen.BackColor = System.Drawing.Color.Transparent;
             this.beginscreen.Image = ((System.Drawing.Image)(resources.GetObject("beginscreen.Image")));
-            this.beginscreen.Location = new System.Drawing.Point(-11, -12);
+            this.beginscreen.Location = new System.Drawing.Point(-17, -82);
             this.beginscreen.Name = "beginscreen";
             this.beginscreen.Size = new System.Drawing.Size(1223, 653);
             this.beginscreen.TabIndex = 13;
@@ -183,7 +183,7 @@
             this.Controls.Add(this.countdown1);
             this.Controls.Add(this.dot2);
             this.Controls.Add(this.dot3);
-            this.Controls.Add(this.gamestartsin);
+            this.Controls.Add(this.gamestarts);
             this.Controls.Add(this.dot1);
             this.Controls.Add(this.Begin);
             this.Controls.Add(this.countdown2_);
@@ -205,7 +205,7 @@
         #endregion
 
         private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.Label gamestartsin;
+        private System.Windows.Forms.Label gamestarts;
         private System.Windows.Forms.Label countdown3;
         private System.Windows.Forms.Label countdown2_;
         private System.Windows.Forms.Label countdown1;
