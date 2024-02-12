@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.Start = new System.Windows.Forms.Button();
             this.gamestarts = new System.Windows.Forms.Label();
             this.countdown3 = new System.Windows.Forms.Label();
             this.countdown2_ = new System.Windows.Forms.Label();
@@ -40,22 +39,10 @@
             this.dot2 = new System.Windows.Forms.Label();
             this.dot3 = new System.Windows.Forms.Label();
             this.beginscreen = new System.Windows.Forms.PictureBox();
+            this.Start_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.loadingscreen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.beginscreen)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Start
-            // 
-            this.Start.BackColor = System.Drawing.Color.Goldenrod;
-            this.Start.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Start.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Start.Location = new System.Drawing.Point(257, 454);
-            this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(477, 75);
-            this.Start.TabIndex = 1;
-            this.Start.Text = "START";
-            this.Start.UseVisualStyleBackColor = false;
-            this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
             // gamestarts
             // 
@@ -108,13 +95,15 @@
             // Begin
             // 
             this.Begin.BackColor = System.Drawing.Color.Transparent;
-            this.Begin.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Begin.Location = new System.Drawing.Point(320, 225);
+            this.Begin.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Begin.ForeColor = System.Drawing.Color.White;
+            this.Begin.Location = new System.Drawing.Point(361, 224);
             this.Begin.Name = "Begin";
             this.Begin.Size = new System.Drawing.Size(373, 67);
             this.Begin.TabIndex = 6;
             this.Begin.Text = "Begin!";
             this.Begin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Begin.Click += new System.EventHandler(this.Begin_Click);
             // 
             // loadingscreen
             // 
@@ -172,6 +161,19 @@
             this.beginscreen.TabStop = false;
             this.beginscreen.Click += new System.EventHandler(this.beginscreen_Click);
             // 
+            // Start_Button
+            // 
+            this.Start_Button.BackColor = System.Drawing.Color.Goldenrod;
+            this.Start_Button.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Start_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Start_Button.Location = new System.Drawing.Point(257, 454);
+            this.Start_Button.Name = "Start_Button";
+            this.Start_Button.Size = new System.Drawing.Size(477, 75);
+            this.Start_Button.TabIndex = 1;
+            this.Start_Button.Text = "START";
+            this.Start_Button.UseVisualStyleBackColor = false;
+            this.Start_Button.Click += new System.EventHandler(this.Start_Button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -188,7 +190,7 @@
             this.Controls.Add(this.Begin);
             this.Controls.Add(this.countdown2_);
             this.Controls.Add(this.countdown3);
-            this.Controls.Add(this.Start);
+            this.Controls.Add(this.Start_Button);
             this.Controls.Add(this.beginscreen);
             this.Controls.Add(this.loadingscreen);
             this.DoubleBuffered = true;
@@ -203,8 +205,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Start;
         private System.Windows.Forms.Label gamestarts;
         private System.Windows.Forms.Label countdown3;
         private System.Windows.Forms.Label countdown2_;
@@ -215,6 +215,7 @@
         private System.Windows.Forms.Label dot2;
         private System.Windows.Forms.Label dot3;
         private System.Windows.Forms.PictureBox beginscreen;
+        private System.Windows.Forms.Button Start_Button;
     }
 }
 
