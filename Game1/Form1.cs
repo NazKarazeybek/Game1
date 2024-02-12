@@ -37,7 +37,7 @@ namespace Game1
         {
             this.BackgroundImage = null;
             SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.coundowncard);
-            Start.Visible = false;
+            SoundPlayer soundPlayer2 = new SoundPlayer(Properties.Resources.begincard);
             loadingscreen.Visible = true;
             dot1.Parent = loadingscreen;
             dot2.Parent = loadingscreen;
